@@ -114,7 +114,7 @@ void main()
 	{
 		pos = ro + tmin*rd;
 
-		vec4 n = noised( 100.0*pos );
+		vec4 n = noised( 12.0*pos );
 		col = 0.5 + 0.5*((p.x>0.0)?n.yzw:n.xxx);
 
 		col = mix( col, vec3(0.9), 1.0-exp( -0.003*tmin*tmin ) );
